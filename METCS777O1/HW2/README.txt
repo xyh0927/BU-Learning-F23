@@ -1,0 +1,1 @@
+The Screenshots of Spark History for Task 1 and 2 are the same, because I ran them in the one Spark app and they are in the one Python file.

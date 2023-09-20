@@ -1,0 +1,31 @@
+Task3.1
+Task 3.1: Summary Statistics
++-------+-----------------+
+|summary|   num_categories|
++-------+-----------------+
+|  count|         25323285|
+|   mean|5.566655905819486|
+| stddev|5.567163467038119|
+|    min|                1|
+|    max|              587|
++-------+-----------------+
+Max: 587
+Average: 5.566655905819486
+Median: 4.0
+StdDev: 5.567163467038041
+
+Task3.2
++--------------------+-------+
+|            category|  count|
++--------------------+-------+
+|   "Noindexed_pages"|2586023|
+| "All_stub_articles"|2243344|
+|"WikiProject_Biog...|1650535|
+|"Articles_with_sh...|1516225|
+|"Redirects_from_m...|1489008|
+|"Unprintworthy_re...|1412217|
+|"Coordinates_on_W...|1048235|
+|"Biography_articl...| 970853|
+|"Stub-Class_biogr...| 939454|
+|     "Living_people"| 938708|
++--------------------+-------+

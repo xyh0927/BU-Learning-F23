@@ -1,0 +1,23 @@
+task1:
+1000000
+
+Top Words in Corpus: [('the', 26451056), ('of', 12507151), ('in', 10807932), ('and', 10758007), ('a', 7988396), ('to', 7681799), ('was', 4588136), ('is', 3746524), ('for', 3145951), ('as', 3066049)]
+
+Word Postions in our Feature Matrix. Last 20 words in 20k positions:  [('sizeable', 19999), ('unlocked', 19998), ('dent', 19997), ('sadler', 19996), ('lockout', 19995), ('minerva', 19994), ('ub', 19993), ('ericsson', 19992), ('ami', 19991), ('erica', 19990), ('yarmouth', 19989), ('overt', 19988), ('csa', 19987), ('divert', 19986), ('melancholy', 19985), ('madurai', 19984), ('rida', 19983), ('corbin', 19982), ('estadio', 19981), ('ethnographic', 19980)]
+
+task2:
+[('11771687', array([0.05805515, 0.02902758, 0.03338171, ..., 0.        , 0.        ,
+       0.        ])), ('5679551', array([0.09274194, 0.0483871 , 0.04233871, ..., 0.        , 0.        ,
+       0.        ])), ('26847077', array([0.09090909, 0.06293706, 0.00699301, ..., 0.        , 0.        ,
+       0.        ]))]
+
+[('438370', array([0.00708045, 0.004654  , 0.00490825, ..., 0.        , 0.        ,
+       0.        ])), ('14656891', array([0.00739969, 0.00643743, 0.00408761, ..., 0.        , 0.        ,
+       0.        ]))]
+
+
+Prediction for Sport Basketball Volleyball Soccer: [('All_stub_articles', 4), ('Disambiguation_pages', 3), ('Disambiguation_pages_with_short_description', 3), ('All_disambiguation_pages', 3), ('All_article_disambiguation_pages', 3), ('Articles_with_Turkish-language_sources_(tr)', 2), ('Articles_containing_Turkish-language_text', 2), ('Living_people', 2), ('Sportspeople_from_Newport_Beach', 1), ('1971_establishments_in_Turkey', 1)]
+
+Prediction for What is the capital city of Australia?: [('Disambiguation_pages_with_short_description', 4), ('All_disambiguation_pages', 4), ('All_article_disambiguation_pages', 4), ('Disambiguation_pages', 3), ('All_stub_articles', 2), ('Regional_capitals_in_Tanzania', 1), ('Unprintworthy_redirects', 1), ("Articles_with_'species'_microformats", 1), ('Lists_of_capitals', 1), ('Commons_category_link_from_Wikidata', 1)]
+
+Prediction for How many goals Vancouver score last year?: [('Coordinates_on_Wikidata', 3), ('Webarchive_template_wayback_links', 3), ('Disambiguation_pages', 2), ('Disambiguation_pages_with_short_description', 2), ('All_disambiguation_pages', 2), ('Articles_with_short_description', 2), ('All_articles_with_unsourced_statements', 2), ('All_article_disambiguation_pages', 2), ('Articles_with_hCards', 1), ('Stanley_Cup_championship_seasons', 1)]
