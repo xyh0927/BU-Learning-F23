@@ -1,0 +1,466 @@
+23/09/26 18:46:56 INFO SparkEnv: Registering MapOutputTracker
+23/09/26 18:46:57 INFO SparkEnv: Registering BlockManagerMaster
+23/09/26 18:46:57 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/09/26 18:46:57 INFO SparkEnv: Registering OutputCommitCoordinator
+23/09/26 18:46:58 INFO DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at hw3-1-m.c.hw3-400215.internal./10.128.0.7:8032
+23/09/26 18:46:58 INFO AHSProxy: Connecting to Application History server at hw3-1-m.c.hw3-400215.internal./10.128.0.7:10200
+23/09/26 18:46:59 INFO Configuration: resource-types.xml not found
+23/09/26 18:46:59 INFO ResourceUtils: Unable to find 'resource-types.xml'.
+23/09/26 18:47:00 INFO YarnClientImpl: Submitted application application_1695750343385_0002
+23/09/26 18:47:01 INFO DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at hw3-1-m.c.hw3-400215.internal./10.128.0.7:8030
+23/09/26 18:47:04 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/09/26 18:47:06 INFO FileInputFormat: Total input files to process : 1
+Task 1
+(m:  9.526356295808061e-06 , b:  12.322131336827626 )
+Execution Time for Task 1: 434.91911458969116 seconds
+23/09/26 18:54:23 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://hw-3-store/out1/' directory.
+Iteration 1: Cost=7.735945777953018e+27, m=5593987536.256959, b=142922.24919899768
+Iteration 2: Cost=1.3823948236008744e+53, m=-2.3647260485796726e+22, b=-7.83404841689977e+16
+Iteration 3: Cost=2.470306156725324e+78, m=9.996320599936906e+34, b=3.3116587647501034e+29
+Iteration 4: Cost=4.414377429511322e+103, m=-4.225708326633628e+47, b=-1.3999254903121372e+42
+Iteration 5: Cost=7.888385833025122e+128, m=1.786318344150283e+60, b=5.917854216371133e+54
+Iteration 6: Cost=1.409635493232824e+154, m=-7.551238703724644e+72, b=-2.501633034659049e+67
+Iteration 7: Cost=2.5189845753110078e+179, m=3.192107730791541e+85, b=1.0575062533267967e+80
+Iteration 8: Cost=4.501364587654818e+204, m=-1.3493881156239882e+98, b=-4.4703578036402734e+92
+Iteration 9: Cost=8.043829783406439e+229, m=5.704219406556387e+110, b=1.889738129644882e+105
+Iteration 10: Cost=1.4374129516696905e+255, m=-2.4113239668773693e+123, b=-7.988421409377475e+117
+Iteration 11: Cost=2.5686222225341935e+280, m=1.0193302288664854e+136, b=3.376916389269935e+130
+23/09/26 19:26:31 WARN TaskSetManager: Lost task 46.0 in stage 26.0 (TID 1822) (hw3-1-w-1.us-central1-c.c.hw3-400215.internal executor 4): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/worker.py", line 686, in main
+    process()
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/worker.py", line 676, in process
+    out_iter = func(split_index, iterator)
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 3472, in pipeline_func
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 3472, in pipeline_func
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 540, in func
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 1532, in <lambda>
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/statcounter.py", line 42, in __init__
+    for v in values:
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/util.py", line 81, in wrapper
+    return f(*args, **kwargs)
+  File "/tmp/job-21f7e51c/Xu_yuhan_Assignment_3.py", line 121, in <lambda>
+OverflowError: (34, 'Numerical result out of range')
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:552)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:758)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:740)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:505)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at org.apache.spark.InterruptibleIterator.foreach(InterruptibleIterator.scala:28)
+	at scala.collection.generic.Growable.$plus$plus$eq(Growable.scala:62)
+	at scala.collection.generic.Growable.$plus$plus$eq$(Growable.scala:53)
+	at scala.collection.mutable.ArrayBuffer.$plus$plus$eq(ArrayBuffer.scala:105)
+	at scala.collection.mutable.ArrayBuffer.$plus$plus$eq(ArrayBuffer.scala:49)
+	at scala.collection.TraversableOnce.to(TraversableOnce.scala:366)
+	at scala.collection.TraversableOnce.to$(TraversableOnce.scala:364)
+	at org.apache.spark.InterruptibleIterator.to(InterruptibleIterator.scala:28)
+	at scala.collection.TraversableOnce.toBuffer(TraversableOnce.scala:358)
+	at scala.collection.TraversableOnce.toBuffer$(TraversableOnce.scala:358)
+	at org.apache.spark.InterruptibleIterator.toBuffer(InterruptibleIterator.scala:28)
+	at scala.collection.TraversableOnce.toArray(TraversableOnce.scala:345)
+	at scala.collection.TraversableOnce.toArray$(TraversableOnce.scala:339)
+	at org.apache.spark.InterruptibleIterator.toArray(InterruptibleIterator.scala:28)
+	at org.apache.spark.rdd.RDD.$anonfun$collect$2(RDD.scala:1021)
+	at org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2286)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+23/09/26 19:26:35 ERROR TaskSetManager: Task 46 in stage 26.0 failed 4 times; aborting job
+23/09/26 19:26:36 WARN TaskSetManager: Lost task 47.2 in stage 26.0 (TID 1830) (hw3-1-w-1.us-central1-c.c.hw3-400215.internal executor 4): TaskKilled (Stage cancelled)
+23/09/26 19:26:38 WARN TaskSetManager: Lost task 37.0 in stage 26.0 (TID 1816) (hw3-1-w-1.us-central1-c.c.hw3-400215.internal executor 2): TaskKilled (Stage cancelled)
+23/09/26 19:26:38 WARN TaskSetManager: Lost task 56.0 in stage 26.0 (TID 1825) (hw3-1-w-1.us-central1-c.c.hw3-400215.internal executor 2): TaskKilled (Stage cancelled)
+23/09/26 19:26:38 WARN TaskSetManager: Lost task 60.0 in stage 26.0 (TID 1826) (hw3-1-w-1.us-central1-c.c.hw3-400215.internal executor 4): TaskKilled (Stage cancelled)
+23/09/26 19:26:38 WARN TaskSetManager: Lost task 43.0 in stage 26.0 (TID 1820) (hw3-1-w-1.us-central1-c.c.hw3-400215.internal executor 4): TaskKilled (Stage cancelled)
+23/09/26 19:26:38 WARN TaskSetManager: Lost task 44.0 in stage 26.0 (TID 1821) (hw3-1-w-1.us-central1-c.c.hw3-400215.internal executor 4): TaskKilled (Stage cancelled)
+23/09/26 19:26:38 WARN TaskSetManager: Lost task 41.0 in stage 26.0 (TID 1817) (hw3-1-w-1.us-central1-c.c.hw3-400215.internal executor 2): TaskKilled (Stage cancelled)
+23/09/26 19:26:38 WARN TaskSetManager: Lost task 34.0 in stage 26.0 (TID 1808) (hw3-1-w-0.us-central1-c.c.hw3-400215.internal executor 1): TaskKilled (Stage cancelled)
+23/09/26 19:26:38 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://hw-3-store/out2/' directory.
+23/09/26 19:26:38 WARN TaskSetManager: Lost task 32.0 in stage 26.0 (TID 1809) (hw3-1-w-0.us-central1-c.c.hw3-400215.internal executor 3): TaskKilled (Stage cancelled)
+23/09/26 19:26:38 WARN TaskSetManager: Lost task 33.0 in stage 26.0 (TID 1810) (hw3-1-w-0.us-central1-c.c.hw3-400215.internal executor 3): TaskKilled (Stage cancelled)
+23/09/26 19:26:38 WARN TaskSetManager: Lost task 35.0 in stage 26.0 (TID 1811) (hw3-1-w-0.us-central1-c.c.hw3-400215.internal executor 1): TaskKilled (Stage cancelled)
+23/09/26 19:26:38 WARN TaskSetManager: Lost task 38.0 in stage 26.0 (TID 1812) (hw3-1-w-0.us-central1-c.c.hw3-400215.internal executor 1): TaskKilled (Stage cancelled)
+23/09/26 19:26:38 WARN TaskSetManager: Lost task 36.0 in stage 26.0 (TID 1813) (hw3-1-w-0.us-central1-c.c.hw3-400215.internal executor 3): TaskKilled (Stage cancelled)
+23/09/26 19:26:39 WARN TaskSetManager: Lost task 45.0 in stage 26.0 (TID 1819) (hw3-1-w-1.us-central1-c.c.hw3-400215.internal executor 2): TaskKilled (Stage cancelled)
+23/09/26 19:26:39 WARN TaskSetManager: Lost task 39.0 in stage 26.0 (TID 1814) (hw3-1-w-0.us-central1-c.c.hw3-400215.internal executor 1): TaskKilled (Stage cancelled)
+23/09/26 19:26:39 WARN TaskSetManager: Lost task 40.0 in stage 26.0 (TID 1815) (hw3-1-w-0.us-central1-c.c.hw3-400215.internal executor 3): TaskKilled (Stage cancelled)
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_8 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_6 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_21 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_26 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_55 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_68 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_51 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_6 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_35 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_36 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_49 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_70 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_15 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_52 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_22 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_68 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_70 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_40 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_33 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_54 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_9 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_16 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_23 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_2 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_11 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_52 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_19 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_20 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_66 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_67 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_34 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_53 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_41 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_38 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_40 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_39 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_65 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_19 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_36 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_48 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_2 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_53 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_55 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_50 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_70 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_18 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_32 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_16 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_23 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_10 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_14 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_57 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_10 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_10 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_24 !
+23/09/26 19:38:40 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_33 !
+23/09/26 19:38:40 WARN YarnAllocator: Container from a bad node: container_1695750343385_0002_01_000003 on host: hw3-1-w-0.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:38:40.553]Container killed on request. Exit code is 143
+[2023-09-26 19:38:40.554]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:38:40.555]Killed by external signal
+.
+23/09/26 19:38:40 WARN YarnSchedulerBackend$YarnSchedulerEndpoint: Requesting driver to remove executor 3 for reason Container from a bad node: container_1695750343385_0002_01_000003 on host: hw3-1-w-0.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:38:40.553]Container killed on request. Exit code is 143
+[2023-09-26 19:38:40.554]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:38:40.555]Killed by external signal
+.
+23/09/26 19:38:40 ERROR YarnScheduler: Lost executor 3 on hw3-1-w-0.us-central1-c.c.hw3-400215.internal: Container from a bad node: container_1695750343385_0002_01_000003 on host: hw3-1-w-0.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:38:40.553]Container killed on request. Exit code is 143
+[2023-09-26 19:38:40.554]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:38:40.555]Killed by external signal
+.
+23/09/26 19:38:40 WARN TaskSetManager: Lost task 69.0 in stage 28.0 (TID 1901) (hw3-1-w-0.us-central1-c.c.hw3-400215.internal executor 3): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Container from a bad node: container_1695750343385_0002_01_000003 on host: hw3-1-w-0.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:38:40.553]Container killed on request. Exit code is 143
+[2023-09-26 19:38:40.554]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:38:40.555]Killed by external signal
+.
+23/09/26 19:38:40 WARN TaskSetManager: Lost task 66.0 in stage 28.0 (TID 1898) (hw3-1-w-0.us-central1-c.c.hw3-400215.internal executor 3): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Container from a bad node: container_1695750343385_0002_01_000003 on host: hw3-1-w-0.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:38:40.553]Container killed on request. Exit code is 143
+[2023-09-26 19:38:40.554]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:38:40.555]Killed by external signal
+.
+23/09/26 19:38:40 WARN TaskSetManager: Lost task 67.0 in stage 28.0 (TID 1899) (hw3-1-w-0.us-central1-c.c.hw3-400215.internal executor 3): ExecutorLostFailure (executor 3 exited caused by one of the running tasks) Reason: Container from a bad node: container_1695750343385_0002_01_000003 on host: hw3-1-w-0.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:38:40.553]Container killed on request. Exit code is 143
+[2023-09-26 19:38:40.554]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:38:40.555]Killed by external signal
+.
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_64 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_3 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_35 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_34 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_37 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_32 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_48 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_33 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_20 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_54 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_18 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_14 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_20 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_2 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_49 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_67 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_24 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_53 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_37 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_21 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_49 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_51 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_3 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_69 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_7 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_64 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_34 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_39 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_54 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_0 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_35 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_15 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_52 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_17 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_38 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_3 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_69 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_22 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_7 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_64 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_1 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_50 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_17 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_32 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_11 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_18 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_50 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_17 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_65 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_48 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_11 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_51 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_24 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_39 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_22 !
+23/09/26 19:38:50 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_66 !
+23/09/26 19:38:50 WARN YarnAllocator: Container from a bad node: container_1695750343385_0002_01_000001 on host: hw3-1-w-0.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:38:50.263]Container killed on request. Exit code is 143
+[2023-09-26 19:38:50.264]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:38:50.264]Killed by external signal
+.
+23/09/26 19:38:50 WARN YarnSchedulerBackend$YarnSchedulerEndpoint: Requesting driver to remove executor 1 for reason Container from a bad node: container_1695750343385_0002_01_000001 on host: hw3-1-w-0.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:38:50.263]Container killed on request. Exit code is 143
+[2023-09-26 19:38:50.264]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:38:50.264]Killed by external signal
+.
+23/09/26 19:38:50 ERROR YarnScheduler: Lost executor 1 on hw3-1-w-0.us-central1-c.c.hw3-400215.internal: Container from a bad node: container_1695750343385_0002_01_000001 on host: hw3-1-w-0.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:38:50.263]Container killed on request. Exit code is 143
+[2023-09-26 19:38:50.264]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:38:50.264]Killed by external signal
+.
+23/09/26 19:38:50 WARN TaskSetManager: Lost task 65.0 in stage 28.0 (TID 1897) (hw3-1-w-0.us-central1-c.c.hw3-400215.internal executor 1): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Container from a bad node: container_1695750343385_0002_01_000001 on host: hw3-1-w-0.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:38:50.263]Container killed on request. Exit code is 143
+[2023-09-26 19:38:50.264]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:38:50.264]Killed by external signal
+.
+23/09/26 19:38:50 WARN TaskSetManager: Lost task 68.0 in stage 28.0 (TID 1900) (hw3-1-w-0.us-central1-c.c.hw3-400215.internal executor 1): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Container from a bad node: container_1695750343385_0002_01_000001 on host: hw3-1-w-0.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:38:50.263]Container killed on request. Exit code is 143
+[2023-09-26 19:38:50.264]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:38:50.264]Killed by external signal
+.
+23/09/26 19:38:50 WARN TaskSetManager: Lost task 64.0 in stage 28.0 (TID 1896) (hw3-1-w-0.us-central1-c.c.hw3-400215.internal executor 1): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Container from a bad node: container_1695750343385_0002_01_000001 on host: hw3-1-w-0.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:38:50.263]Container killed on request. Exit code is 143
+[2023-09-26 19:38:50.264]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:38:50.264]Killed by external signal
+.
+23/09/26 19:38:50 WARN TaskSetManager: Lost task 69.1 in stage 28.0 (TID 1905) (hw3-1-w-0.us-central1-c.c.hw3-400215.internal executor 1): ExecutorLostFailure (executor 1 exited caused by one of the running tasks) Reason: Container from a bad node: container_1695750343385_0002_01_000001 on host: hw3-1-w-0.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:38:50.263]Container killed on request. Exit code is 143
+[2023-09-26 19:38:50.264]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:38:50.264]Killed by external signal
+.
+Iteration 0, Cost: 7.379396230425838, b: 0, m1: 0, m2: 0, m3: 0, m4: 0, learning_rate: 1e-07
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_42 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_27 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_26 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_58 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_67 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_45 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_31 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_65 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_43 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_13 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_59 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_40 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_7 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_55 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_27 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_5 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_56 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_64 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_57 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_19 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_9 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_41 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_1 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_41 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_56 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_5 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_58 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_23 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_25 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_36 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_16 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_6 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_58 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_56 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_61 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_25 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_42 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_38 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_31 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_42 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_13 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_29 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_4 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_5 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_57 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_37 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_47 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_9 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_59 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_1 !
+23/09/26 19:43:16 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_25 !
+23/09/26 19:43:16 WARN YarnAllocator: Container from a bad node: container_1695750343385_0002_01_000002 on host: hw3-1-w-1.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:43:16.532]Container killed on request. Exit code is 143
+[2023-09-26 19:43:16.533]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:43:16.534]Killed by external signal
+.
+23/09/26 19:43:16 WARN YarnSchedulerBackend$YarnSchedulerEndpoint: Requesting driver to remove executor 2 for reason Container from a bad node: container_1695750343385_0002_01_000002 on host: hw3-1-w-1.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:43:16.532]Container killed on request. Exit code is 143
+[2023-09-26 19:43:16.533]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:43:16.534]Killed by external signal
+.
+23/09/26 19:43:16 ERROR YarnScheduler: Lost executor 2 on hw3-1-w-1.us-central1-c.c.hw3-400215.internal: Container from a bad node: container_1695750343385_0002_01_000002 on host: hw3-1-w-1.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:43:16.532]Container killed on request. Exit code is 143
+[2023-09-26 19:43:16.533]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:43:16.534]Killed by external signal
+.
+23/09/26 19:43:16 WARN TaskSetManager: Lost task 24.0 in stage 29.0 (TID 1963) (hw3-1-w-1.us-central1-c.c.hw3-400215.internal executor 2): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Container from a bad node: container_1695750343385_0002_01_000002 on host: hw3-1-w-1.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:43:16.532]Container killed on request. Exit code is 143
+[2023-09-26 19:43:16.533]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:43:16.534]Killed by external signal
+.
+23/09/26 19:43:16 WARN TaskSetManager: Lost task 16.0 in stage 29.0 (TID 1956) (hw3-1-w-1.us-central1-c.c.hw3-400215.internal executor 2): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Container from a bad node: container_1695750343385_0002_01_000002 on host: hw3-1-w-1.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:43:16.532]Container killed on request. Exit code is 143
+[2023-09-26 19:43:16.533]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:43:16.534]Killed by external signal
+.
+23/09/26 19:43:16 WARN TaskSetManager: Lost task 19.0 in stage 29.0 (TID 1959) (hw3-1-w-1.us-central1-c.c.hw3-400215.internal executor 2): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Container from a bad node: container_1695750343385_0002_01_000002 on host: hw3-1-w-1.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:43:16.532]Container killed on request. Exit code is 143
+[2023-09-26 19:43:16.533]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:43:16.534]Killed by external signal
+.
+23/09/26 19:43:16 WARN TaskSetManager: Lost task 23.0 in stage 29.0 (TID 1962) (hw3-1-w-1.us-central1-c.c.hw3-400215.internal executor 2): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Container from a bad node: container_1695750343385_0002_01_000002 on host: hw3-1-w-1.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:43:16.532]Container killed on request. Exit code is 143
+[2023-09-26 19:43:16.533]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:43:16.534]Killed by external signal
+.
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_8 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_44 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_4 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_28 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_12 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_13 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_29 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_4 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_60 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_46 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_61 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_14 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_30 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_8 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_12 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_30 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_21 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_0 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_68 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_30 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_63 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_0 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_26 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_47 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_43 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_15 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_44 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_60 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_27 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_62 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_45 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_12 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_43 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_47 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_61 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_59 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_46 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_69 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_44 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_29 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_28 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_31 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_63 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_60 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_63 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4_62 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_62 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_66 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_28 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_42_45 !
+23/09/26 19:43:47 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_12_46 !
+23/09/26 19:43:47 WARN YarnAllocator: Container from a bad node: container_1695750343385_0002_01_000004 on host: hw3-1-w-1.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:43:47.294]Container killed on request. Exit code is 143
+[2023-09-26 19:43:47.294]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:43:47.295]Killed by external signal
+.
+23/09/26 19:43:47 WARN YarnSchedulerBackend$YarnSchedulerEndpoint: Requesting driver to remove executor 4 for reason Container from a bad node: container_1695750343385_0002_01_000004 on host: hw3-1-w-1.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:43:47.294]Container killed on request. Exit code is 143
+[2023-09-26 19:43:47.294]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:43:47.295]Killed by external signal
+.
+23/09/26 19:43:47 ERROR YarnScheduler: Lost executor 4 on hw3-1-w-1.us-central1-c.c.hw3-400215.internal: Container from a bad node: container_1695750343385_0002_01_000004 on host: hw3-1-w-1.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:43:47.294]Container killed on request. Exit code is 143
+[2023-09-26 19:43:47.294]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:43:47.295]Killed by external signal
+.
+23/09/26 19:43:47 WARN TaskSetManager: Lost task 22.0 in stage 29.0 (TID 1961) (hw3-1-w-1.us-central1-c.c.hw3-400215.internal executor 4): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Container from a bad node: container_1695750343385_0002_01_000004 on host: hw3-1-w-1.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:43:47.294]Container killed on request. Exit code is 143
+[2023-09-26 19:43:47.294]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:43:47.295]Killed by external signal
+.
+23/09/26 19:43:47 WARN TaskSetManager: Lost task 18.0 in stage 29.0 (TID 1958) (hw3-1-w-1.us-central1-c.c.hw3-400215.internal executor 4): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Container from a bad node: container_1695750343385_0002_01_000004 on host: hw3-1-w-1.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:43:47.294]Container killed on request. Exit code is 143
+[2023-09-26 19:43:47.294]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:43:47.295]Killed by external signal
+.
+23/09/26 19:43:47 WARN TaskSetManager: Lost task 17.0 in stage 29.0 (TID 1957) (hw3-1-w-1.us-central1-c.c.hw3-400215.internal executor 4): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Container from a bad node: container_1695750343385_0002_01_000004 on host: hw3-1-w-1.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:43:47.294]Container killed on request. Exit code is 143
+[2023-09-26 19:43:47.294]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:43:47.295]Killed by external signal
+.
+23/09/26 19:43:47 WARN TaskSetManager: Lost task 20.0 in stage 29.0 (TID 1960) (hw3-1-w-1.us-central1-c.c.hw3-400215.internal executor 4): ExecutorLostFailure (executor 4 exited caused by one of the running tasks) Reason: Container from a bad node: container_1695750343385_0002_01_000004 on host: hw3-1-w-1.us-central1-c.c.hw3-400215.internal. Exit status: 143. Diagnostics: [2023-09-26 19:43:47.294]Container killed on request. Exit code is 143
+[2023-09-26 19:43:47.294]Container exited with a non-zero exit code 143. 
+[2023-09-26 19:43:47.295]Killed by external signal
+.
+Iteration 1, Cost: -84665197.95240544, b: 1.4758792460851675e-06, m1: 206688.14572324773, m2: 2109.3598139661317, m3: 3109.770777644441, m4: 62.73566957933406, learning_rate: 1.05e-07
+Iteration 2, Cost: 1019948696038598.1, b: -17.7796900941259, m1: -2489940275829.8667, m2: -25411132983.13612, m3: -37462929868.3806, m4: -755766954.4623939, learning_rate: 1.1025000000000001e-07
+Iteration 3, Cost: -1.2901524361995425e+22, b: 224898669.69682083, m1: 3.1495726454966796e+19, m2: 3.2143023714932096e+17, m3: 4.7387570006789286e+17, m4: 9559839443746302.0, learning_rate: 5.5125000000000006e-08
+Iteration 4, Cost: 8.159690695754973e+28, b: -1422392836011326.2, m1: -1.9919769083076286e+26, m2: -2.032915833672798e+24, m3: -2.997071533793741e+24, m4: -6.046210569646363e+22, learning_rate: 5.788125000000001e-08
+Iteration 5, Cost: -5.418707001414941e+35, b: 9.445860519280514e+21, m1: 1.3228368111206984e+33, m2: 1.3500236310355836e+31, m3: 1.9903024648175585e+31, m4: 4.015182041497878e+29, learning_rate: 2.8940625000000004e-08
+Iteration 6, Cost: 1.799233711209285e+42, b: -3.136414401670434e+28, m1: -4.3923625772263403e+39, m2: -4.482634007068669e+37, m3: -6.608623218172857e+37, m4: -1.3332056676654864e+36, learning_rate: 3.0387656250000004e-08
+Iteration 7, Cost: -6.272906235361222e+48, b: 1.0934895969513505e+35, m1: 1.5313674053012186e+46, m2: 1.5628399267199245e+44, m3: 2.3040516378812722e+44, m4: 4.648131086926362e+42, learning_rate: 1.5193828125000002e-08
+Iteration 8, Cost: 1.0935027813802206e+55, b: -1.906188090196787e+41, m1: -2.6695035031326496e+52, m2: -2.724366892472667e+50, m3: -4.016458687464843e+50, m4: -8.102694478552656e+48, learning_rate: 1.5953519531250003e-08
+Iteration 9, Cost: -2.0015216818485225e+61, b: 3.48904168985702e+47, m1: 4.8861962056890374e+58, m2: 4.986616858634371e+56, m3: 7.3516311838390184e+56, m4: 1.4830980731248804e+55, learning_rate: 7.976759765625001e-09
+Iteration 10, Cost: 1.831768022200894e+67, b: -3.193128035317386e+53, m1: -4.471786661593739e+64, m2: -4.563690407879373e+62, m3: -6.728122425900822e+62, m4: -1.3573131127058325e+61, learning_rate: 8.375597753906251e-09
+Iteration 11, Cost: -1.7602322306986412e+73, b: 3.0684272333565852e+59, m1: 4.2971505753702434e+70, m2: 4.38546521694781e+68, m3: 6.465369960944658e+68, m4: 1.3043061453076388e+67, learning_rate: 4.187798876953126e-09
+Iteration 12, Cost: 8.457441783295334e+78, b: -1.4742966433520597e+65, m1: -2.064665115853667e+76, m2: -2.1070979225440888e+74, m3: -3.1064361337397357e+74, m4: -6.26683973804716e+72, learning_rate: 4.397188820800782e-09
+Iteration 13, Cost: -4.266752064154851e+84, b: 7.4377789494495e+70, m1: 1.0416168825727974e+82, m2: 1.0630240965002807e+80, m3: 1.5671869964246583e+80, m4: 3.1616004074486696e+78, learning_rate: 2.198594410400391e-09
+Iteration 14, Cost: 1.0762791845117789e+90, b: -1.8761640099840875e+76, m1: -2.6274565573363073e+87, m2: -2.6814558017313657e+85, m3: -3.953196054347149e+85, m4: -7.975070163715003e+83, learning_rate: 2.3085241309204107e-09
+Iteration 15, Cost: -2.850636593096208e+95, b: 4.969214176465466e+81, m1: 6.959090091954947e+92, m2: 7.102112668519894e+90, m3: 1.0470448090396856e+91, m4: 2.1122797103530124e+89, learning_rate: 1.1542620654602053e-09
+Iteration 16, Cost: 3.775088481701438e+100, b: -6.58071367150558e+86, m1: -9.215899674089083e+97, m2: -9.405303992661714e+95, m3: -1.3865979297409526e+96, m4: -2.797284937686267e+94, learning_rate: 1.2119751687332157e-09
+Iteration 17, Cost: -5.249305756423569e+105, b: 9.150561192049123e+91, m1: 1.2814818896115867e+103, m2: 1.3078187870007222e+101, m3: 1.9280810316672443e+101, m4: 3.8896582151460355e+99, learning_rate: 6.059875843666078e-10
+Iteration 18, Cost: 3.649585021920643e+110, b: -6.361936724261774e+96, m1: -8.909515519201351e+107, m2: -9.092623058931964e+105, m3: -1.340500245315503e+106, m4: -2.704288723326121e+104, learning_rate: 6.362869635849383e-10
+Iteration 19, Cost: -2.664248302857507e+115, b: 4.6443031245186694e+101, m1: 6.504071410514679e+112, m2: 6.63774248518141e+110, m3: 9.785839984850289e+110, m4: 1.974168733783106e+109, learning_rate: 3.1814348179246915e-10
+Iteration 20, Cost: 9.724560111134022e+119, b: -1.6951800198302832e+106, m1: -2.3739992001052962e+117, m2: -2.422789412313456e+115, m3: -3.571851357418391e+115, m4: -7.205755747542005e+113, learning_rate: 3.340506558820926e-10
+Iteration 21, Cost: -3.726963146022393e+124, b: 6.496821848576327e+110, m1: 9.098414145590842e+121, m2: 9.285403912437187e+119, m3: 1.3689213928480653e+120, m4: 2.7616247730917864e+118, learning_rate: 1.670253279410463e-10
+Iteration 22, Cost: 7.141655613364473e+128, b: -1.244929515158682e+115, m1: -1.7434500398784064e+126, m2: -1.779281264006965e+124, m3: -2.6231451094232165e+124, m4: -5.291861574700175e+122, learning_rate: 1.7537659433809863e-10
+Iteration 23, Cost: -1.4369216471993159e+133, b: 2.5048339858633366e+119, m1: 3.5078716179249607e+130, m2: 3.579965071296784e+128, m3: 5.277843395894566e+128, m4: 1.0647377670296237e+127, learning_rate: 8.768829716904931e-11
+Iteration 24, Cost: 1.4454919923126858e+137, b: -2.5197737647664828e+123, m1: -3.5287938932885938e+134, m2: -3.601317339330518e+132, m3: -5.309322453534754e+132, m4: -1.0710882664715138e+131, learning_rate: 9.207271202750178e-11
+Iteration 25, Cost: -1.5268263543812998e+141, b: 2.6615553815488384e+127, m1: 3.727350648850547e+138, m2: 3.8039548149865645e+136, m3: 5.608065274023951e+136, m4: 1.1313558302744154e+135, learning_rate: 4.603635601375089e-11
+Iteration 26, Cost: 8.062922614942519e+144, b: -1.405524276891343e+131, m1: -1.9683534905057962e+142, m2: -2.008806909571055e+140, m3: -2.961528414428497e+140, m4: -5.97450684767603e+138, learning_rate: 4.8338173814438435e-11
+Iteration 27, Cost: -4.470834059651482e+148, b: 7.793533571992269e+134, m1: 1.0914382100702066e+146, m2: 1.1138693473170336e+144, m3: 1.642146742090164e+144, m4: 3.3128221588918494e+142, learning_rate: 2.4169086907219217e-11
+Iteration 28, Cost: 1.2392995284982557e+152, b: -2.1603401853522484e+138, m1: -3.025428457147006e+149, m2: -3.0876067832552295e+147, m3: -4.551973202414499e+147, m4: -9.183026891035704e+145, learning_rate: 2.5377541252580178e-11
+Iteration 29, Cost: -3.6071215558412246e+155, b: 6.287914641568178e+141, m1: 8.805851977247664e+152, m2: 8.986829033442334e+150, m3: 1.3249033250205995e+151, m4: 2.672823920675379e+149, learning_rate: 1.2688770626290089e-11
+Iteration 30, Cost: 5.247664231072361e+158, b: -9.14769969400162e+144, m1: -1.2810811537607385e+156, m2: -1.3074098152636943e+154, m3: -1.927478095957428e+154, m4: -3.888441869049387e+152, learning_rate: 1.3323209157604595e-11
+Iteration 31, Cost: -8.01631574558152e+161, b: 1.3973997928197468e+148, m1: 1.9569756318349702e+159, m2: 1.997195214200116e+157, m3: 2.944409613404427e+157, m4: 5.939971844248738e+155, learning_rate: 6.661604578802297e-12
+Iteration 32, Cost: 6.118841485627598e+164, b: -1.0666331137249963e+151, m1: -1.4937564914447718e+162, m2: -1.5244560368370678e+160, m3: -2.247463331656933e+160, m4: -4.533971377572047e+158, learning_rate: 6.994684807742413e-12
+Iteration 33, Cost: -4.904333356940134e+167, b: 8.549207184963426e+153, m1: 1.1972658231701897e+165, m2: 1.2218719197432042e+163, m3: 1.8013719446457325e+163, m4: 3.634038750418094e+161, learning_rate: 3.4973424038712064e-12
+Iteration 34, Cost: 1.9629922505767818e+170, b: -3.4218773952043874e+156, m1: -4.792136589650765e+167, m2: -4.890624138058185e+165, m3: -7.210111773381908e+165, m4: -1.45454833229728e+164, learning_rate: 3.672209524064767e-12
+Iteration 35, Cost: -8.250839754415065e+172, b: 1.4382818902514735e+159, m1: 2.0142285875483478e+170, m2: 2.0556248273692656e+168, m3: 3.030550774518538e+168, m4: 6.1137506790003e+166, learning_rate: 1.8361047620323834e-12
+Iteration 36, Cost: 1.7298691140551733e+175, b: -3.015498413867005e+161, m1: -4.223026899028565e+172, m2: -4.309818157658825e+170, m3: -6.353845595668493e+170, m4: -1.281807523286018e+169, learning_rate: 1.9279100001340025e-12
+Iteration 37, Cost: -3.809046408047599e+177, b: 6.639908943681161e+163, m1: 9.298799146210586e+174, m2: 9.489907207074525e+172, m3: 1.3990707474240134e+173, m4: 2.822447260726697e+171, learning_rate: 9.639550000670012e-13
+Iteration 38, Cost: 4.174576823170629e+179, b: -7.2770995716126565e+165, m1: -1.0191146875259092e+177, m2: -1.0400594384199434e+175, m3: -1.533330836776603e+175, m4: -3.0932999121139485e+173, learning_rate: 1.0121527500703514e-12
+Iteration 39, Cost: -4.8060314452801516e+181, b: 8.377847828188079e+167, m1: 1.1732679603381373e+179, m2: 1.1973808550515783e+177, m3: 1.7652654459881064e+177, m4: 3.5611984823914176e+175, learning_rate: 5.060763750351757e-13
+Iteration 40, Cost: 2.7424704045573946e+183, b: -4.7806594659830096e+169, m1: -6.695030389371707e+180, m2: -6.83262603532771e+178, m3: -1.0073151407622232e+179, m4: -2.03213015851243e+177, learning_rate: 5.313801937869346e-13
+Iteration 41, Cost: -1.6445567211444914e+185, b: 2.866782315397452e+171, m1: 4.014758812642762e+182, m2: 4.0972697648051426e+180, m3: 6.040491384331324e+180, m4: 1.2185922972472934e+179, learning_rate: 2.656900968934673e-13
+Iteration 42, Cost: 4.848667324319208e+186, b: -8.45217046021391e+172, m1: -1.1836764046871159e+184, m2: -1.2080032127870993e+182, m3: -1.7809256939253696e+182, m4: -3.592791040504873e+180, learning_rate: 2.789746017381407e-13
+Iteration 43, Cost: -1.5034399718361532e+188, b: 2.620788366923236e+174, m1: 3.670258859789966e+185, m2: 3.7456896807523687e+183, m3: 5.522166599650162e+183, m4: 1.1140268654145078e+182, learning_rate: 1.3948730086907034e-13
+Iteration 44, Cost: 2.255707393336596e+189, b: -3.932136837109599e+175, m1: -5.50672471171371e+186, m2: -5.619898409179367e+184, m3: -8.285260641870313e+184, m4: -1.6714459398218287e+183, learning_rate: 1.4646166591252386e-13
+Iteration 45, Cost: -3.564880101814096e+190, b: 6.214279569074532e+176, m1: 8.702730420153622e+187, m2: 8.881588131635102e+185, m3: 1.3093879502189094e+186, m4: 2.6415236256840016e+184, learning_rate: 7.323083295626193e-14
+Iteration 46, Cost: 2.6386927522764855e+191, b: -4.599754827993548e+177, m1: -6.44168416014626e+188, m2: -6.574073057807865e+186, m3: -9.691973910715069e+186, m4: -1.9552324473725782e+185, learning_rate: 7.689237460407504e-14
+Iteration 47, Cost: -2.063987376645621e+192, b: 3.597931548662672e+178, m1: 5.038690002619274e+189, m2: 5.14224469398902e+187, m3: 7.581068993059423e+187, m4: 1.5293842325155756e+186, learning_rate: 3.844618730203752e-14
+Iteration 48, Cost: 7.040268395389643e+192, b: -1.2272557505649048e+179, m1: -1.7186989795086197e+190, m2: -1.7540215221314027e+188, m3: -2.5859053712735798e+188, m4: -5.216735140154855e+186, learning_rate: 4.03684966671394e-14
+Iteration 49, Cost: -2.5567113386923707e+193, b: 4.456845274536167e+179, m1: 6.241547796086712e+190, m2: 6.369823509686336e+188, m3: 9.390854456419054e+188, m4: 1.8944854279317004e+187, learning_rate: 2.01842483335697e-14
+23/09/26 21:05:35 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://hw-3-store/out3/' directory.
