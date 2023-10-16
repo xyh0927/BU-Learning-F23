@@ -1,0 +1,42 @@
+You will be working with the us_national_statistics database that you restored in assignment 1-A. The primary table is person_economic_info. Each row describes a person sampled from that state. It has the following columns:
+
+Column_name	Column_description
+age	Person’s age in years
+marital_status	Indicates whether the person is married
+address_state	Numeric code refers to ‘states’ table
+income	Annual income in USD
+income_category	Categorized income
+car_price	Price of car in USD
+car_price_category	Categorized car price
+education	Numeric code refers to education_codes table
+years_employed	Years of continuous employment for person
+retired	Indicates person is retired
+employment_category	Categorizes type of most recent employment for person per employment_categories table
+gender	‘m’ or ‘f’ for male or female
+length_at_current_residence	Years person has lived at current residence
+wireless	Indicates person owns a wireless phone
+multiple_lines	Indicates person has multiple voice phone lines
+voice_mail	Indicates person has voice mail
+pager	Indicates person has a pager
+internet	Indicates person has a dedicated residential internet connection rather than cellular or dial-up
+caller_id	Indicates person has caller id service on voice line
+call_waiting	Indicates person has call waiting service on voice line
+own_tv	Indicates person owns a television set
+own_dvd_player	Indicates person owns a DVD player
+own_smartphone	Indicates person owns a smartphone
+own_computer	Indicates person owns a personal computer
+own_fax	Indicates person has a fax send/receive device on a phone line
+read_newspapers	Indicates person reads physical newspapers
+
+Description tables augmenting this table are:
+
+Table name	Usage
+states	Translates numeric state codes to actual states
+employment_categories	Translates numeric employment categories to descriptions
+education_codes	Translates numeric education codes to descriptions
+
+With each question, write ONE query that answers the question. Put the text of the query in your submission document, along with a screen shot of the results from running the query.
+1.Create a view named additional_person_info
+This view should give the names of states, employment categories, and education levels along with all the other fields in the person_economic_info table for use in later reports.  
+Hint: you don’t need to specify each field individually for the person_economic_info table, think about how to select all the columns from the table.  Once you have your query constructed, turn it into a view.
+
