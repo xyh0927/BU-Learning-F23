@@ -1,0 +1,48 @@
+First 10 words in the vocabulary :  ['also', 'first', 'one', 'new', 'two', 'may', 'made', 'time', 'many', 'three']
+Total time to vectorize the data: 258.25 seconds
+-----------------------------------------------------------------------------------
+
+---------------------------------- For Test ----------------------------------
+23/10/08 23:32:47 INFO FileInputFormat: Total input files to process : 1
+The vocabulary in TRAIN is reused in TEST, so the First 10 words in the vocabulary :  ['also', 'first', 'one', 'new', 'two', 'may', 'made', 'time', 'many', 'three']
+Total time to vectorize the TEST data: 0.28 seconds
+-----------------------------------------------------------------------------------
+
+---------------------------------- Logistic Regression ----------------------------------
+True Positives: 346
+True Negatives: 18328
+False Positives: 19
+False Negatives: 31
+accuracy:  99.73296304208502 %
+
+Performance Metrics: Logistic Regression
+Precision: 0.947945205479452
+Recall: 0.9177718832891246
+F1: 0.9326145552560647
+Confusion Matrix:
+ TP: 346 FN:  31 
+ FP:  19 TN:  18328
+The total time needed to train the model: 122.72 secs
+Evaluate the model: 0.19 secs
+Test the model: 55.99 secs
+Total Time: 178.90 secs
+---------------------------------------------------------------------------------------
+
+-------------------------------------- SVM model --------------------------------------
+True Positives: 347
+True Negatives: 18335
+False Positives: 12
+False Negatives: 30
+accuracy:  99.77568895535141 %
+
+Performance Metrics: SVM
+Precision: 0.9665738161559888
+Recall: 0.9204244031830239
+F1: 0.9429347826086956
+Confusion Matrix:
+ TP: 347 FN:  30 
+ FP:  12 TN:  18335
+The total time needed to train the model: 28.28 secs
+Evaluate the model: 0.07 secs
+Test the model: 3.50 secs
+Total Time: 31.86 secs

@@ -1,0 +1,54 @@
+=========================================================== Task 1 ===========================================================
+
+---------------------------------- For Train ----------------------------------
+23/10/08 23:14:45 INFO FileInputFormat: Total input files to process : 1
+First 10 words in the vocabulary :  ['also', 'first', 'one', 'new', 'two', 'may', 'made', 'time', 'many', 'three']
+Total time to vectorize the data: 279.71 seconds
+-----------------------------------------------------------------------------------
+
+---------------------------------- For Test ----------------------------------
+23/10/08 23:19:39 INFO FileInputFormat: Total input files to process : 1
+The vocabulary in TRAIN is reused in TEST, so the First 10 words in the vocabulary :  ['also', 'first', 'one', 'new', 'two', 'may', 'made', 'time', 'many', 'three']
+Total time to vectorize the TEST data: 0.31 seconds
+-----------------------------------------------------------------------------------
+==============================================================================================================================
+
+=========================================================== Task 2 ===========================================================
+True Positives: 375
+True Negatives: 18339
+False Positives: 8
+False Negatives: 2
+accuracy:  99.946592608417 %
+
+Performance Metrics: Logistic Regression
+Precision: 0.97911227154047
+Recall: 0.9946949602122016
+F1: 0.9868421052631579
+Confusion Matrix:
+ TP: 375 FN:  2 
+ FP:  8 TN:  18339
+The total time needed to train the model: 143.53 secs
+Evaluate the model: 0.12 secs
+Test the model: 60.55
+Total Time: 204.19 secs
+==============================================================================================================================
+
+=========================================================== Task 3 ===========================================================
+True Positives: 375
+True Negatives: 18345
+False Positives: 2
+False Negatives: 2
+accuracy:  99.9786370433668 %
+
+Performance Metrics: SVM
+Precision: 0.9946949602122016
+Recall: 0.9946949602122016
+F1: 0.9946949602122016
+Confusion Matrix:
+ TP: 375 FN:  2 
+ FP:  2 TN:  18345
+The total time needed to train the model: 30.16 secs
+Evaluate the model: 0.08 secs
+Test the model: 3.66 secs
+Total Time: 33.90 secs
+==============================================================================================================================
