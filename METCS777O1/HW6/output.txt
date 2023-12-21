@@ -1,0 +1,227 @@
+Task 2:
+Time 1,the
+Time 2,to
+Time 3,of
+Time 4,and
+Time 5,in
+Time 6,is
+Time 7,that
+Time 8,it
+Time 9,for
+Time 10,you
+Time 11,from
+Time 12,on
+Time 13,this
+Time 14,be
+Time 15,are
+Time 16,not
+Time 17,have
+Time 18,with
+Time 19,as
+Time 20,or
+Time 21,was
+Time 22,if
+Time 23,but
+Time 24,subject
+Time 25,they
+Time 26,lines
+Time 27,date
+Time 28,apr
+Time 29,by
+Time 30,at
+Time 31,gmt
+Time 32,an
+Time 33,can
+Time 34,my
+Time 35,what
+Time 36,would
+Time 37,all
+Time 38,there
+Time 39,will
+Time 40,one
+Time 41,do
+Time 42,writes
+Time 43,1993
+Time 44,about
+Time 45,re
+Time 46,we
+Time 47,so
+Time 48,your
+Time 49,has
+Time 50,he
+Time 51,article
+Time 52,no
+Time 53,any
+Time 54,some
+Time 55,me
+Time 56,who
+Time 57,which
+Time 58,out
+Time 59,like
+Time 60,more
+Time 61,don't
+Time 62,when
+Time 63,people
+Time 64,were
+Time 65,just
+Time 66,their
+Time 67,know
+Time 68,how
+Time 69,other
+Time 70,up
+Time 71,get
+Time 72,them
+Time 73,only
+Time 74,had
+Time 75,than
+Time 76,been
+Time 77,93
+Time 78,think
+Time 79,his
+Time 80,also
+Time 81,may
+Time 82,does
+Time 83,then
+Time 84,use
+Time 85,time
+Time 86,it's
+Time 87,these
+Time 88,i'm
+Time 89,should
+Time 90,could
+Time 91,new
+Time 92,good
+Time 93,because
+Time 94,even
+Time 95,am
+Time 96,now
+Time 97,well
+Time 98,see
+Time 99,into
+Time 100,very
+
+Task 3:
+
+
+
+Task 4:
+Cluster 10:
+  Size: 2046
+  <doc id="20_newsgroups/sci: 82.06%
+  <doc id="20_newsgroups/comp: 13.20%
+  <doc id="20_newsgroups/misc: 1.76%
+
+Cluster 17:
+  Size: 2109
+  <doc id="20_newsgroups/comp: 94.50%
+  <doc id="20_newsgroups/sci: 3.60%
+  <doc id="20_newsgroups/misc: 0.76%
+
+Cluster 6:
+  Size: 2389
+  <doc id="20_newsgroups/comp: 76.56%
+  <doc id="20_newsgroups/sci: 13.56%
+  <doc id="20_newsgroups/misc: 9.63%
+
+Cluster 16:
+  Size: 832
+  <doc id="20_newsgroups/rec: 30.05%
+  <doc id="20_newsgroups/comp: 25.36%
+  <doc id="20_newsgroups/sci: 20.07%
+
+Cluster 19:
+  Size: 49
+  <doc id="20_newsgroups/sci: 44.90%
+  <doc id="20_newsgroups/comp: 24.49%
+  <doc id="20_newsgroups/talk: 14.29%
+
+Cluster 11:
+  Size: 201
+  <doc id="20_newsgroups/misc: 27.86%
+  <doc id="20_newsgroups/sci: 25.87%
+  <doc id="20_newsgroups/comp: 23.88%
+
+Cluster 2:
+  Size: 680
+  <doc id="20_newsgroups/misc: 52.94%
+  <doc id="20_newsgroups/sci: 16.03%
+  <doc id="20_newsgroups/comp: 15.74%
+
+Cluster 4:
+  Size: 2167
+  <doc id="20_newsgroups/rec: 79.79%
+  <doc id="20_newsgroups/sci: 11.17%
+  <doc id="20_newsgroups/misc: 4.75%
+
+Cluster 0:
+  Size: 2410
+  <doc id="20_newsgroups/soc: 37.18%
+  <doc id="20_newsgroups/alt: 30.50%
+  <doc id="20_newsgroups/talk: 29.17%
+
+Cluster 14:
+  Size: 464
+  <doc id="20_newsgroups/talk: 30.82%
+  <doc id="20_newsgroups/sci: 26.72%
+  <doc id="20_newsgroups/rec: 20.47%
+
+Cluster 18:
+  Size: 121
+  <doc id="20_newsgroups/talk: 93.39%
+  <doc id="20_newsgroups/comp: 4.96%
+  <doc id="20_newsgroups/alt: 0.83%
+
+Cluster 12:
+  Size: 204
+  <doc id="20_newsgroups/sci: 36.76%
+  <doc id="20_newsgroups/talk: 28.92%
+  <doc id="20_newsgroups/comp: 17.16%
+
+Cluster 15:
+  Size: 481
+  <doc id="20_newsgroups/comp: 67.36%
+  <doc id="20_newsgroups/sci: 14.14%
+  <doc id="20_newsgroups/misc: 9.77%
+
+Cluster 3:
+  Size: 222
+  <doc id="20_newsgroups/talk: 28.83%
+  <doc id="20_newsgroups/comp: 28.38%
+  <doc id="20_newsgroups/sci: 25.23%
+
+Cluster 7:
+  Size: 826
+  <doc id="20_newsgroups/sci: 93.83%
+  <doc id="20_newsgroups/soc: 1.69%
+  <doc id="20_newsgroups/talk: 1.57%
+
+Cluster 1:
+  Size: 1721
+  <doc id="20_newsgroups/rec: 97.97%
+  <doc id="20_newsgroups/talk: 1.10%
+  <doc id="20_newsgroups/sci: 0.35%
+
+Cluster 5:
+  Size: 2905
+  <doc id="20_newsgroups/talk: 89.02%
+  <doc id="20_newsgroups/sci: 5.47%
+  <doc id="20_newsgroups/alt: 2.93%
+
+Cluster 9:
+  Size: 136
+  <doc id="20_newsgroups/alt: 55.88%
+  <doc id="20_newsgroups/talk: 37.50%
+  <doc id="20_newsgroups/sci: 2.94%
+
+Cluster 13:
+  Size: 25
+  <doc id="20_newsgroups/rec: 84.00%
+  <doc id="20_newsgroups/comp: 8.00%
+  <doc id="20_newsgroups/misc: 4.00%
+
+Cluster 8:
+  Size: 9
+  <doc id="20_newsgroups/rec: 55.56%
+  <doc id="20_newsgroups/talk: 22.22%
+  <doc id="20_newsgroups/comp: 11.11%
+
